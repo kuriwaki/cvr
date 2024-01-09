@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>cvr</title>
+<title>cvr - Cast Vote Records</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -93,6 +59,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+
+<script src="site_libs/core-js-2.5.3/shim.min.js"></script>
+<script src="site_libs/react-17.0.0/react.min.js"></script>
+<script src="site_libs/react-17.0.0/react-dom.min.js"></script>
+<script src="site_libs/reactwidget-1.0.0/react-tools.js"></script>
+<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="site_libs/reactable-0.4.4/reactable.css" rel="stylesheet">
+<script src="site_libs/reactable-binding-0.4.4/reactable.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -135,14 +109,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#coverage" id="toc-coverage" class="nav-link active" data-scroll-target="#coverage">Coverage</a>
+  <ul class="collapse">
+  <li><a href="#us-house" id="toc-us-house" class="nav-link" data-scroll-target="#us-house">US House</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">cvr</h1>
+<h1 class="title">Cast Vote Records</h1>
 </div>
 
 
@@ -158,15 +141,463 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<section id="coverage" class="level1">
+<h1>Coverage</h1>
+<section id="us-house" class="level2">
+<h2 class="anchored" data-anchor-id="us-house">US House</h2>
+<p>Current coverage vs.&nbsp;elections</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="cell-output-display">
+
+<div id="zakkdxiemz" class=".gt_table" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zakkdxiemz table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#zakkdxiemz thead, #zakkdxiemz tbody, #zakkdxiemz tfoot, #zakkdxiemz tr, #zakkdxiemz td, #zakkdxiemz th {
+  border-style: none;
+}
+
+#zakkdxiemz p {
+  margin: 0;
+  padding: 0;
+}
+
+#zakkdxiemz .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#zakkdxiemz .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#zakkdxiemz .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#zakkdxiemz .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#zakkdxiemz .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#zakkdxiemz .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zakkdxiemz .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#zakkdxiemz .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#zakkdxiemz .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#zakkdxiemz .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#zakkdxiemz .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#zakkdxiemz .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#zakkdxiemz .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#zakkdxiemz .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#zakkdxiemz .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#zakkdxiemz .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#zakkdxiemz .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#zakkdxiemz .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#zakkdxiemz .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zakkdxiemz .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#zakkdxiemz .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#zakkdxiemz .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#zakkdxiemz .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zakkdxiemz .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#zakkdxiemz .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#zakkdxiemz .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zakkdxiemz .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zakkdxiemz .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#zakkdxiemz .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zakkdxiemz .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#zakkdxiemz .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zakkdxiemz .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#zakkdxiemz .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zakkdxiemz .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#zakkdxiemz .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zakkdxiemz .gt_left {
+  text-align: left;
+}
+
+#zakkdxiemz .gt_center {
+  text-align: center;
+}
+
+#zakkdxiemz .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#zakkdxiemz .gt_font_normal {
+  font-weight: normal;
+}
+
+#zakkdxiemz .gt_font_bold {
+  font-weight: bold;
+}
+
+#zakkdxiemz .gt_font_italic {
+  font-style: italic;
+}
+
+#zakkdxiemz .gt_super {
+  font-size: 65%;
+}
+
+#zakkdxiemz .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#zakkdxiemz .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#zakkdxiemz .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#zakkdxiemz .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#zakkdxiemz .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#zakkdxiemz .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#zakkdxiemz .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<div id="zakkdxiemz" class="reactable html-widget " style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="zakkdxiemz">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"cd":["AZ-01","AZ-02","AZ-03","AZ-04","AZ-05","AZ-06","AZ-07","AZ-08","AZ-09","CA-01","CA-11","CA-12","CA-13","CA-14","CA-15","CA-16","CA-17","CA-18","CA-19","CA-02","CA-20","CA-21","CA-22","CA-23","CA-24","CA-25","CA-26","CA-27","CA-03","CA-30","CA-31","CA-35","CA-36","CA-39","CA-04","CA-41","CA-42","CA-49","CA-05","CA-50","CA-51","CA-52","CA-53","CA-08","CA-09","CO-01","CO-02","CO-03","CO-04","CO-05","CO-06","CO-07","FL-01","FL-10","FL-11","FL-12","FL-14","FL-15","FL-16","FL-17","FL-18","FL-19","FL-02","FL-20","FL-21","FL-22","FL-23","FL-24","FL-26","FL-27","FL-03","FL-04","FL-05","FL-06","FL-07","FL-08","FL-09","GA-01","GA-10","GA-11","GA-12","GA-13","GA-14","GA-02","GA-03","GA-04","GA-05","GA-06","GA-07","GA-08","GA-09","IL-10","IL-12","IL-13","IL-14","IL-15","IL-17","IL-18","IL-06","MD-01","MD-02","MD-03","MD-05","MD-06","MD-07","MD-08","MI-01","MI-10","MI-11","MI-12","MI-13","MI-14","MI-02","MI-03","MI-04","MI-05","MI-06","MI-07","MI-09","NJ-01","NJ-10","NJ-11","NJ-12","NJ-02","NJ-04","NJ-05","NJ-06","NJ-07","NJ-08","NJ-09","NM-01","NM-02","NM-03","NV-02","NV-04","OH-10","OH-11","OH-12","OH-13","OH-14","OH-15","OH-16","OH-02","OH-03","OH-04","OH-05","OH-06","OH-07","OH-08","OH-09","OR-01","OR-02","OR-04","OR-05","RI-01","RI-02","TN-07","TX-01","TX-10","TX-11","TX-13","TX-15","TX-17","TX-19","TX-21","TX-22","TX-23","TX-24","TX-25","TX-26","TX-27","TX-03","TX-30","TX-31","TX-32","TX-33","TX-34","TX-35","TX-36","TX-04","TX-05","TX-06","TX-08","TX-09","UT-03","WI-01","WI-02","WI-03","WI-05","WI-06","WI-07","WI-08","WV-01","WV-03"],"shareD_harv":[0.464847923641285,0.57686834288271,0.645553551145854,0.319300821643913,0.410554783086068,0.477209570897542,0.76685224440355,0.403784844952867,0.615139874619789,0.353567696922714,0.729927616626633,1,0.903656929920787,0.767595215179431,0.709046661667168,0.623582867204728,0.727473276315106,1,0.744675084497162,0.787441628346344,0.792067844162469,0.495353481398751,0.467802388355905,0.359570439029252,0.586620060253595,0.456879697614806,0.605021601365986,0.469929508343,0.420279586887212,0.558625840179238,0.611325976173602,0.679958930230284,0.585426237957169,0.48017544729147,0.440393938925556,0.653481802171999,0.451342719672696,0.564669457833445,0.77459820465345,0.457904225630387,0.696459183070284,0.615758080177556,1,0.436540290325287,0.595275766242723,0.75787604471148,0.634412730061041,0.467819552866239,0.378317298379286,0.393552504030903,0.5882809158296,0.611304290535347,0.336042916216518,0.636223712647436,0.327035699851081,0.365532916898322,0.602575402541006,0.470999254317266,0.443189658916,0.385304012954216,0.397187321321233,0.330106470283345,0,0.712595521829744,0.601565385452135,0.531902213724346,0.502384831876759,0.794238700994226,0.484657639198844,0.480911104042282,0.33501946369127,0.38900310563927,0.664821950752917,0.392025151376116,0.622043382753038,0.275129524991197,0.617891443828956,0.428924631853502,0.366548924831133,0.391047827364953,0.474791686620055,0.694041426316996,0.254757747854415,0.611438094108689,0.366800200300451,0.800766008515672,0.881167507711088,0.551282242026592,0.513911285437771,0.368264862540395,0.235782291947732,0.543834618871402,0.275904880145163,0.507870003397124,0.400910955598456,0.172010715155451,0.438740920096852,0.301400906468892,0.364587834269528,0.377902414619375,0.674412337584811,0.740494930496488,0.617499689125235,0.581839897249997,0.718633299384063,0.656262621412694,0.385688635403464,0.475020769017754,0.539204704564548,0.50751708428246,0.95735822596196,0.918602462256692,0.371609252787485,0.340354002643526,0.338452009187808,0.619320789352914,0.469832726505198,0.36681051392703,0.676060567065586,0.623260923897197,0.857352888698569,0.5696409396852,0.644323671497585,0.453026772761243,0.421869972671698,0.577295205993431,0.613107846486733,0.556724205147772,0.751041671118253,0.679172790463497,0.5379375,0.432568821200858,0.545178252689469,0.423251756404946,0.278270362382512,0.231468390224197,0.776728962277187,0.546396070289643,0.492811410604024,0.342943163274342,0.389831094365059,0.302459487048616,0.284439486893475,0.708497798989997,0.236673950764238,0.30362107038469,0.255848582705418,0.242495923158253,0.316312429135664,0.521872728474195,0.648742305814059,0.394130018314418,0.364856819869295,0.519353546146654,1,0.583697328095345,0.315041558673697,0.299501886792453,0.638237709800184,0.133520563594821,0.134555221993996,0.336948385701692,0.685263944366217,0.145032422417786,0.652490486020418,0.459590631721382,0.178620689655172,0.559460012970611,0.583919218867883,0.462882096069869,0.265872528552131,0.437734468375735,0.824124611850244,0.473670344265076,0.526017880459569,0.690535304815371,0.667518401281416,0.757357023875625,0.162492137016069,0.230965353450685,0.596449477017561,0.292473979183347,0.319161858487701,0.786518230402891,0.413987404706662,0.274018351099717,0.730392673766862,0.44474690517856,0.38398658043574,0.401230511916851,0.397299399080947,0.37910798996135,0.293325168401715,0.245931283905967],"N_harv":[70195,321836,269406,64018,444462,415635,214645,421259,350135,148345,371356,372213,362818,363650,342701,180029,173161,220773,125448,280530,141147,164747,203571,240804,362468,69051,349052,22414,73394,1339,296310,204530,316267,40354,388182,272560,383252,284230,199293,364419,203004,396495,334858,286024,98598,437561,497531,414149,449123,410578,425494,409809,402645,376179,368657,305770,372136,253459,414502,119189,272836,185216,146224,93565,395302,80543,33755,230330,284539,326944,184446,504888,219546,442441,148861,59641,100372,257642,306603,377629,208820,222419,298986,160219,247628,348299,91751,201639,371461,234869,259430,134574,20942,8831,33152,12319,12390,24270,20829,379770,293153,250419,136711,333236,329904,354061,94680,97501,7142,21950,22818,26561,12018,34802,38747,13074,94755,101960,139878,384112,280230,190915,145728,90988,245533,325156,263430,120557,233999,306863,16000,99279,103645,364523,37557,9902,115792,167137,87778,79051,231431,62696,129096,320989,168861,139931,55740,55803,346613,90798,362449,213493,149497,74870,158384,263969,134268,99375,159497,21008,31645,60119,69598,17272,142422,268267,1450,117188,182914,229,16286,409970,198055,277083,320126,63235,26221,90050,34974,85896,104210,99920,23051,65303,6034,59288,369849,46287,202093,66964,70725,134281,37559,9954],"shareD_all":[0.516101736687314,0.551152472960202,0.645734276618848,0.302354411447328,0.411079816421109,0.478272847707503,0.767125066070717,0.404347033606423,0.616264612205272,0.430055573698651,0.729927616626633,1,0.903656929920787,0.792866198487201,0.709046661667168,0.593783019346742,0.713458847902709,1,0.716823149440783,0.757379326310916,0.767761882847087,0.495532307114258,0.457737696698917,0.378599102306954,0.586634285004623,0.483224502942813,0.605848584266664,0.697757454666927,0.546737766624843,0.694827825764769,0.612882363223213,0.693299665228815,0.603394503485428,0.494023846438015,0.440545945676912,0.640301935080911,0.428676228851206,0.531295762549611,0.760907254670931,0.460468004083998,0.683047554622438,0.615758080177556,1,0.439403626139571,0.575830276593635,0.757859206172185,0.634520053176154,0.468039039821003,0.378510763767242,0.39355792437161,0.588273725869905,0.61129601343009,0.344887220131137,0.636245990811085,0.332778330909144,0.371178567093692,0.602575402541006,0.446147781637234,0.444997152784082,0.345176056078486,0.424297663423948,0.387205175151714,0,0.786767739113983,0.601524004075472,0.586015505186209,0.582034815962622,0.787398033169131,0.482756909786067,0.486318128661793,0.428600336577007,0.38901806226729,0.651277698806729,0.393661839898743,0.561388184558868,0.3864715912551,0.560327550609502,0.416507799627343,0.376899214154727,0.395738170207105,0.416192893237321,0.774004842991116,0.252898821617229,0.591160989974983,0.349544056576843,0.800766008515672,0.851493499349794,0.545889741730126,0.513912519113562,0.354793564203724,0.214193108520536,0.638806478898133,0.395690660513126,0.455370682329343,0.506700012966158,0.265539450564608,0.520255173839679,0.295900010487282,0.537576571411328,0.36445039997163,0.678871104589195,0.698994563393516,0.68942889109583,0.600157599146848,0.718634532552916,0.683589094067031,0.374053753394046,0.337197952101829,0.512142920234728,0.684125084523822,0.807204646385743,0.812402330301706,0.392334656202508,0.470402907158332,0.332400536014507,0.565962616338151,0.418297435784598,0.412488025057648,0.600389975339795,0.624800664883256,0.857008019303101,0.533036701905815,0.668307890029351,0.470657191201354,0.389942452157504,0.538042283540577,0.611651675204039,0.506119410895801,0.750743276532849,0.673741246365402,0.581882411528526,0.462736331746146,0.586811068269449,0.418923352462499,0.525211931121996,0.416431930028388,0.800533031766974,0.430596014949239,0.538759894377232,0.399008680337149,0.365739943540855,0.368085823927073,0.389121738231388,0.708497798989997,0.301673910211622,0.320021376735868,0.255864106263311,0.301792975643152,0.310231540738791,0.630824657870228,0.647214917679559,0.381465770381012,0.527207125993642,0.534709210331599,1,0.583703310856883,0.281030534239224,0.274213686901718,0.463534386098365,0.186717116260202,0.188627845187425,0.51466463658947,0.422841844723948,0.234109150208091,0.466071752129009,0.463976423620229,0.47961948949451,0.493080462268594,0.429506072034942,0.380661131233273,0.356521057171987,0.437734468375735,0.808034288463131,0.453209353501907,0.530728963850551,0.726549618847228,0.569851399584778,0.685827941267965,0.247924897848918,0.23117672180105,0.366899872167937,0.454447372180028,0.259940331326587,0.77720402852867,0.28029036502782,0.406460725237333,0.697247766669804,0.513284745014047,0.398567078144543,0.407426701694066,0.392346470133007,0.358024661803888,0.310232549251906,0.286638235501872],"N_all":[365178,380920,269837,398486,445585,417427,215678,422449,352274,358263,371356,362950,362818,351005,342701,216729,297336,344139,313027,388755,308554,170334,315139,306118,362345,512265,344733,317318,321988,345464,286050,244346,306849,343783,442022,262573,368047,386506,356460,362390,242437,396495,334858,283111,302610,437576,499472,414756,459551,410613,425506,409826,432524,376323,475073,453135,372136,390671,484684,407001,439960,444586,305337,322409,395537,402317,380113,277909,342630,342899,390401,504920,336973,437698,400696,459788,429613,324695,378446,405882,310099,360521,307625,273017,371318,348299,354503,397104,371464,307965,372547,316844,322416,333021,401044,333506,299874,371879,397668,394778,331191,372475,397735,359139,329909,401873,409909,409786,441533,372676,276516,334034,392833,403418,363423,347371,363581,387267,383614,385030,281820,441176,345474,369375,416523,418508,326408,433947,235444,302303,321290,264829,317448,371858,320741,364948,302421,424637,322279,397450,383286,391406,377211,320989,337772,377981,334791,338878,357043,301713,458999,442716,457031,439235,158550,263980,341027,302742,404902,285962,267601,224622,296955,258781,441520,392257,287088,331236,385785,422972,267771,409970,253613,388988,336409,144955,195558,257168,296130,330163,274579,329037,374736,222513,342741,401441,456829,389394,441336,403113,414789,417731,261665,226512]},"columns":[{"id":"cd","name":"CD","type":"character","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["AZ-01","AZ-02","AZ-03","AZ-04","AZ-05","AZ-06","AZ-07","AZ-08","AZ-09","CA-01","CA-11","CA-12","CA-13","CA-14","CA-15","CA-16","CA-17","CA-18","CA-19","CA-02","CA-20","CA-21","CA-22","CA-23","CA-24","CA-25","CA-26","CA-27","CA-03","CA-30","CA-31","CA-35","CA-36","CA-39","CA-04","CA-41","CA-42","CA-49","CA-05","CA-50","CA-51","CA-52","CA-53","CA-08","CA-09","CO-01","CO-02","CO-03","CO-04","CO-05","CO-06","CO-07","FL-01","FL-10","FL-11","FL-12","FL-14","FL-15","FL-16","FL-17","FL-18","FL-19","FL-02","FL-20","FL-21","FL-22","FL-23","FL-24","FL-26","FL-27","FL-03","FL-04","FL-05","FL-06","FL-07","FL-08","FL-09","GA-01","GA-10","GA-11","GA-12","GA-13","GA-14","GA-02","GA-03","GA-04","GA-05","GA-06","GA-07","GA-08","GA-09","IL-10","IL-12","IL-13","IL-14","IL-15","IL-17","IL-18","IL-06","MD-01","MD-02","MD-03","MD-05","MD-06","MD-07","MD-08","MI-01","MI-10","MI-11","MI-12","MI-13","MI-14","MI-02","MI-03","MI-04","MI-05","MI-06","MI-07","MI-09","NJ-01","NJ-10","NJ-11","NJ-12","NJ-02","NJ-04","NJ-05","NJ-06","NJ-07","NJ-08","NJ-09","NM-01","NM-02","NM-03","NV-02","NV-04","OH-10","OH-11","OH-12","OH-13","OH-14","OH-15","OH-16","OH-02","OH-03","OH-04","OH-05","OH-06","OH-07","OH-08","OH-09","OR-01","OR-02","OR-04","OR-05","RI-01","RI-02","TN-07","TX-01","TX-10","TX-11","TX-13","TX-15","TX-17","TX-19","TX-21","TX-22","TX-23","TX-24","TX-25","TX-26","TX-27","TX-03","TX-30","TX-31","TX-32","TX-33","TX-34","TX-35","TX-36","TX-04","TX-05","TX-06","TX-08","TX-09","UT-03","WI-01","WI-02","WI-03","WI-05","WI-06","WI-07","WI-08","WV-01","WV-03"],"html":true,"align":"left","headerStyle":{"font-weight":"normal"}},{"id":"shareD_harv","name":"Collected %D","type":"numeric","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["0.46","0.58","0.65","0.32","0.41","0.48","0.77","0.40","0.62","0.35","0.73","1.00","0.90","0.77","0.71","0.62","0.73","1.00","0.74","0.79","0.79","0.50","0.47","0.36","0.59","0.46","0.61","0.47","0.42","0.56","0.61","0.68","0.59","0.48","0.44","0.65","0.45","0.56","0.77","0.46","0.70","0.62","1.00","0.44","0.60","0.76","0.63","0.47","0.38","0.39","0.59","0.61","0.34","0.64","0.33","0.37","0.60","0.47","0.44","0.39","0.40","0.33","0.00","0.71","0.60","0.53","0.50","0.79","0.48","0.48","0.34","0.39","0.66","0.39","0.62","0.28","0.62","0.43","0.37","0.39","0.47","0.69","0.25","0.61","0.37","0.80","0.88","0.55","0.51","0.37","0.24","0.54","0.28","0.51","0.40","0.17","0.44","0.30","0.36","0.38","0.67","0.74","0.62","0.58","0.72","0.66","0.39","0.48","0.54","0.51","0.96","0.92","0.37","0.34","0.34","0.62","0.47","0.37","0.68","0.62","0.86","0.57","0.64","0.45","0.42","0.58","0.61","0.56","0.75","0.68","0.54","0.43","0.55","0.42","0.28","0.23","0.78","0.55","0.49","0.34","0.39","0.30","0.28","0.71","0.24","0.30","0.26","0.24","0.32","0.52","0.65","0.39","0.36","0.52","1.00","0.58","0.32","0.30","0.64","0.13","0.13","0.34","0.69","0.15","0.65","0.46","0.18","0.56","0.58","0.46","0.27","0.44","0.82","0.47","0.53","0.69","0.67","0.76","0.16","0.23","0.60","0.29","0.32","0.79","0.41","0.27","0.73","0.44","0.38","0.40","0.40","0.38","0.29","0.25"],"html":true,"align":"right","headerStyle":{"font-weight":"normal"}},{"id":"N_harv","name":"Collected R + D","type":"numeric","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["70,195","321,836","269,406","64,018","444,462","415,635","214,645","421,259","350,135","148,345","371,356","372,213","362,818","363,650","342,701","180,029","173,161","220,773","125,448","280,530","141,147","164,747","203,571","240,804","362,468","69,051","349,052","22,414","73,394","1,339","296,310","204,530","316,267","40,354","388,182","272,560","383,252","284,230","199,293","364,419","203,004","396,495","334,858","286,024","98,598","437,561","497,531","414,149","449,123","410,578","425,494","409,809","402,645","376,179","368,657","305,770","372,136","253,459","414,502","119,189","272,836","185,216","146,224","93,565","395,302","80,543","33,755","230,330","284,539","326,944","184,446","504,888","219,546","442,441","148,861","59,641","100,372","257,642","306,603","377,629","208,820","222,419","298,986","160,219","247,628","348,299","91,751","201,639","371,461","234,869","259,430","134,574","20,942","8,831","33,152","12,319","12,390","24,270","20,829","379,770","293,153","250,419","136,711","333,236","329,904","354,061","94,680","97,501","7,142","21,950","22,818","26,561","12,018","34,802","38,747","13,074","94,755","101,960","139,878","384,112","280,230","190,915","145,728","90,988","245,533","325,156","263,430","120,557","233,999","306,863","16,000","99,279","103,645","364,523","37,557","9,902","115,792","167,137","87,778","79,051","231,431","62,696","129,096","320,989","168,861","139,931","55,740","55,803","346,613","90,798","362,449","213,493","149,497","74,870","158,384","263,969","134,268","99,375","159,497","21,008","31,645","60,119","69,598","17,272","142,422","268,267","1,450","117,188","182,914","229","16,286","409,970","198,055","277,083","320,126","63,235","26,221","90,050","34,974","85,896","104,210","99,920","23,051","65,303","6,034","59,288","369,849","46,287","202,093","66,964","70,725","134,281","37,559","9,954"],"html":true,"align":"right","headerStyle":{"font-weight":"normal"}},{"id":"shareD_all","name":"Election %D","type":"numeric","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["0.52","0.55","0.65","0.30","0.41","0.48","0.77","0.40","0.62","0.43","0.73","1.00","0.90","0.79","0.71","0.59","0.71","1.00","0.72","0.76","0.77","0.50","0.46","0.38","0.59","0.48","0.61","0.70","0.55","0.69","0.61","0.69","0.60","0.49","0.44","0.64","0.43","0.53","0.76","0.46","0.68","0.62","1.00","0.44","0.58","0.76","0.63","0.47","0.38","0.39","0.59","0.61","0.34","0.64","0.33","0.37","0.60","0.45","0.44","0.35","0.42","0.39","0.00","0.79","0.60","0.59","0.58","0.79","0.48","0.49","0.43","0.39","0.65","0.39","0.56","0.39","0.56","0.42","0.38","0.40","0.42","0.77","0.25","0.59","0.35","0.80","0.85","0.55","0.51","0.35","0.21","0.64","0.40","0.46","0.51","0.27","0.52","0.30","0.54","0.36","0.68","0.70","0.69","0.60","0.72","0.68","0.37","0.34","0.51","0.68","0.81","0.81","0.39","0.47","0.33","0.57","0.42","0.41","0.60","0.62","0.86","0.53","0.67","0.47","0.39","0.54","0.61","0.51","0.75","0.67","0.58","0.46","0.59","0.42","0.53","0.42","0.80","0.43","0.54","0.40","0.37","0.37","0.39","0.71","0.30","0.32","0.26","0.30","0.31","0.63","0.65","0.38","0.53","0.53","1.00","0.58","0.28","0.27","0.46","0.19","0.19","0.51","0.42","0.23","0.47","0.46","0.48","0.49","0.43","0.38","0.36","0.44","0.81","0.45","0.53","0.73","0.57","0.69","0.25","0.23","0.37","0.45","0.26","0.78","0.28","0.41","0.70","0.51","0.40","0.41","0.39","0.36","0.31","0.29"],"html":true,"align":"right","headerStyle":{"font-weight":"normal"}},{"id":"N_all","name":"Election R + D","type":"numeric","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["365,178","380,920","269,837","398,486","445,585","417,427","215,678","422,449","352,274","358,263","371,356","362,950","362,818","351,005","342,701","216,729","297,336","344,139","313,027","388,755","308,554","170,334","315,139","306,118","362,345","512,265","344,733","317,318","321,988","345,464","286,050","244,346","306,849","343,783","442,022","262,573","368,047","386,506","356,460","362,390","242,437","396,495","334,858","283,111","302,610","437,576","499,472","414,756","459,551","410,613","425,506","409,826","432,524","376,323","475,073","453,135","372,136","390,671","484,684","407,001","439,960","444,586","305,337","322,409","395,537","402,317","380,113","277,909","342,630","342,899","390,401","504,920","336,973","437,698","400,696","459,788","429,613","324,695","378,446","405,882","310,099","360,521","307,625","273,017","371,318","348,299","354,503","397,104","371,464","307,965","372,547","316,844","322,416","333,021","401,044","333,506","299,874","371,879","397,668","394,778","331,191","372,475","397,735","359,139","329,909","401,873","409,909","409,786","441,533","372,676","276,516","334,034","392,833","403,418","363,423","347,371","363,581","387,267","383,614","385,030","281,820","441,176","345,474","369,375","416,523","418,508","326,408","433,947","235,444","302,303","321,290","264,829","317,448","371,858","320,741","364,948","302,421","424,637","322,279","397,450","383,286","391,406","377,211","320,989","337,772","377,981","334,791","338,878","357,043","301,713","458,999","442,716","457,031","439,235","158,550","263,980","341,027","302,742","404,902","285,962","267,601","224,622","296,955","258,781","441,520","392,257","287,088","331,236","385,785","422,972","267,771","409,970","253,613","388,988","336,409","144,955","195,558","257,168","296,130","330,163","274,579","329,037","374,736","222,513","342,741","401,441","456,829","389,394","441,336","403,113","414,789","417,731","261,665","226,512"],"html":true,"align":"right","headerStyle":{"font-weight":"normal"}}],"defaultPageSize":10,"showPageSizeOptions":false,"pageSizeOptions":[10,25,50,100],"paginationType":"numbers","showPagination":true,"showPageInfo":true,"minRows":1,"showSortable":true,"height":"auto","theme":{"color":"#333333","backgroundColor":"#FFFFFF","stripedColor":"rgba(128,128,128,0.05)","style":{"fontFamily":"system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"},"headerStyle":{"borderTopStyle":"solid","borderTopWidth":"2px","borderTopColor":"#D3D3D3","borderBottomStyle":"solid","borderBottomWidth":"2px","borderBottomColor":"#D3D3D3"}},"elementId":"zakkdxiemz","dataKey":"37adf9df801fb24ab247de898dee20f8"},"children":[]},"class":"reactR_markup"},"evals":["tag.attribs.columns.0.style","tag.attribs.columns.1.style","tag.attribs.columns.2.style","tag.attribs.columns.3.style","tag.attribs.columns.4.style"],"jsHooks":[]}</script>
+</div>
 </div>
 </div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

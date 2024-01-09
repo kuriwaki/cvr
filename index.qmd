@@ -1,11 +1,45 @@
 ---
-title: "cvr"
+title: "Cast Vote Records"
 ---
 
 This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+```{r}
+#| include: false
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(gt)
+})
+```
+
+
+# Coverage
+
+## US House
+
+Current coverage vs. elections
 
 ```{r}
-1 + 1
+#| echo: false
+comp_tbl <- read_csv("data/tmp_ushou_harv.csv", show_col_types = FALSE)
+
+comp_tbl |>
+  select(cd, shareD_harv, N_harv, shareD_all, N_all) |>
+  gt() |>
+  sub_missing() |>
+  cols_label_with(
+    fn =
+      \(x) case_match(x,
+        "shareD_harv" ~ "Collected %D",
+        "shareD_all" ~ "Election %D",
+        "N_harv" ~ "Collected R + D",
+        "N_all" ~ "Election R + D",
+        "cd" ~ "CD",
+      )
+  ) |>
+  fmt_integer(starts_with("N_")) |>
+  fmt_number(starts_with("shareD_"), decimals = 2) |> 
+  opt_interactive()
+
 ```
+
