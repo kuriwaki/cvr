@@ -19,5 +19,19 @@
     "title": "Cast Vote Records",
     "section": "US House",
     "text": "US House\nCurrent coverage vs. elections"
+  },
+  {
+    "objectID": "index.html#us-house-district",
+    "href": "index.html#us-house-district",
+    "title": "Cast Vote Records",
+    "section": "US House (district)",
+    "text": "US House (district)"
+  },
+  {
+    "objectID": "index.html#presidential-county",
+    "href": "index.html#presidential-county",
+    "title": "Cast Vote Records",
+    "section": "Presidential (county)",
+    "text": "Presidential (county)"
   }
 ]
