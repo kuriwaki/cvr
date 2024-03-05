@@ -32,6 +32,6 @@
     "href": "index.html#presidential-county",
     "title": "Cast Vote Records",
     "section": "Presidential (county)",
-    "text": "Presidential (county)"
+    "text": "Presidential (county)\nThese plots look at our counts of Presidential vote choice at the county level.\nFirst, a plot comparing the total Biden + Trump vote at the county level.\nHere\n\nx-axis: Counts from our database\ny-axis: True values from CNN\n\n\n\n\n\n\n\nSecond, looking at D vs. R separately by putting them on separate x-axis\n\nx-axis: Our count of the Biden vote minus the CNN count of the Biden vote\ny-axis: Our count of the Trump vote minus the CNN count of the Trump vote"
   }
 ]

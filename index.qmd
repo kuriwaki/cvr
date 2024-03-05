@@ -103,6 +103,9 @@ Second, looking at D vs. R separately by putting them on separate x-axis
 * y-axis: Our count of the Trump vote minus the CNN count of the Trump vote
 
 ```{r}
+#| echo: false
+#| message: false
+#| warning: false
 pres_plot_D <- plot_ly(data = pres_summary, 
                      x = ~ err_D, 
                      y = ~ err_R, 
