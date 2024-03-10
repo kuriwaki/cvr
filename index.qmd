@@ -2,7 +2,7 @@
 title: "Cast Vote Records"
 ---
 
-This is a Quarto website.
+This document compares total counts from CVRs with votes reported from external sources.
 
 ```{r}
 #| include: false
