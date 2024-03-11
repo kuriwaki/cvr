@@ -130,6 +130,5 @@ pres_plot_D |>
               text = NA, mode = "lines", 
               marker = list(size = 1), 
               line = list(color = "rgba(0, 0, 0, 0.2)"), showlegend = FALSE)
-  
-```
 
+```
