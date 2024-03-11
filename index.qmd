@@ -2,7 +2,7 @@
 title: "Cast Vote Records"
 ---
 
-This is a Quarto website.
+This document compares total counts from CVRs with votes reported from external sources.
 
 ```{r}
 #| include: false
@@ -10,39 +10,11 @@ suppressPackageStartupMessages({
   library(tidyverse)
   library(gt)
   library(plotly)
+  library(glue)
 })
 ```
 
 
-# Coverage
-
-## US House
-
-Current coverage vs. elections
-
-```{r}
-#| echo: false
-comp_tbl <- read_csv("data/tmp_ushou_harv.csv", show_col_types = FALSE)
-
-comp_tbl |>
-  select(cd, shareD_harv, N_harv, shareD_all, N_all) |>
-  gt() |>
-  sub_missing() |>
-  cols_label_with(
-    fn =
-      \(x) case_match(x,
-        "shareD_harv" ~ "Collected %D",
-        "shareD_all" ~ "Election %D",
-        "N_harv" ~ "Collected R + D",
-        "N_all" ~ "Election R + D",
-        "cd" ~ "CD",
-      )
-  ) |>
-  fmt_integer(starts_with("N_")) |>
-  fmt_number(starts_with("shareD_"), decimals = 2) |> 
-  opt_interactive()
-
-```
 
 # Validation
 
@@ -76,14 +48,23 @@ ush_plot |>
          yaxis = list(title = "CVR Total Votes",
                       scaleanchor="x", scaleratio=1,
                       dtick = 100000))  |> 
-    add_trace(x = c(0, ~max(harv_DR, na.rm = T)), 
-              y = c(0, ~max(harv_DR, na.rm = T)), 
+    add_trace(x = c(0, ~max(harv_DR, na.rm = TRUE)), 
+              y = c(0, ~max(harv_DR, na.rm = TRUE)), 
               text = NA, mode = "lines", 
               marker = list(size = 1), 
               line = list(color = "rgba(0, 0, 0, 0.2)"), showlegend = FALSE)
 ```
 
 ## Presidential (county)
+
+These plots look at our counts of Presidential vote choice at the county level.
+
+First, a plot comparing the total Biden + Trump vote at the county level.
+
+Here
+
+* x-axis: Counts from our database
+* y-axis: True values from CNN
 
 ```{r}
 #| echo: false
@@ -109,9 +90,45 @@ pres_plot |>
          yaxis = list(title = "CVR Total Votes",
                       scaleanchor="x", scaleratio=1,
                       dtick = 500000)) |> 
-    add_trace(x = c(0, ~max(harv_DR, na.rm = T)), 
-              y = c(0, ~max(harv_DR, na.rm = T)), 
+    add_trace(x = c(0, ~max(harv_DR, na.rm = TRUE)), 
+              y = c(0, ~max(harv_DR, na.rm = TRUE)), 
               text = NA, mode = "lines", 
               marker = list(size = 1), 
               line = list(color = "rgba(0, 0, 0, 0.2)"), showlegend = FALSE)
+```
+
+
+Second, looking at D vs. R separately by putting them on separate x-axis
+
+* x-axis: Our count of the Biden vote minus the CNN count of the Biden vote, normalized by the CNN count
+* y-axis: Our count of the Trump vote minus the CNN count of the Trump vote, normalized by the CNN count
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+pres_plot_D <- plot_ly(data = pres_summary, 
+                     x = ~ (err_D/valid_D), 
+                     y = ~ (err_R/valid_R), 
+                     text = ~glue("County: {county_name}, {st}
+                                  Harvard count: {harv_D} Biden, {harv_R} Trump
+                                  Valid count: {valid_D} Biden, {valid_R} Trump"), 
+                     mode = "markers", 
+                     type = "scatter", 
+                     marker = list(size = 10),
+                     width = 650,
+                     height = 650)
+
+pres_plot_D |> 
+  layout(title = "2020 Presidential Validation",
+         xaxis = list(title = "(CVR Biden - Valid Biden) / Valid Biden",
+                      scaleanchor="y", scaleratio=1),
+         yaxis = list(title = "(CVR Trump - Valid Trump) / Valid Trump",
+                      scaleanchor="x", scaleratio=1)) |> 
+    add_trace(x = c(~min((err_R/valid_R), na.rm = TRUE), ~max((err_D/valid_D), na.rm = TRUE)), 
+              y = c(~min((err_R/valid_R), na.rm = TRUE), ~max((err_D/valid_D), na.rm = TRUE)), 
+              text = NA, mode = "lines", 
+              marker = list(size = 1), 
+              line = list(color = "rgba(0, 0, 0, 0.2)"), showlegend = FALSE)
+
 ```
